@@ -1,0 +1,158 @@
+*{
+    background-color: pink;
+    
+}
+
+
+
+
+
+header {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 10px 10px;
+    background-color: #ffa099;
+}
+header * {
+    background-color: inherit;
+}
+.logodiv{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.logoimg {
+    background: #fff0f5; 
+    border-radius: 20%;
+    width: 6rem;
+    height: 6rem;
+}
+header h1{
+    font-family: "Winky Sans", sans-serif;
+    text-align: center;
+    color: #c11c04;
+    font-size: 4rem;
+    margin-top: 1px;
+    margin-bottom: 1px;    
+    text-wrap: nowrap;
+}
+.navbar{
+    display: flex;
+}
+
+.navbar ul {
+    justify-content: center;
+    display: flex;
+    justify-content: space-evenly; 
+    gap: 0.5rem; 
+    padding: 0;
+    list-style: none;
+}
+
+.navbar ul li{
+    list-style-type: none;
+    
+}
+.navbar ul li>a:hover{
+    color: purple;
+}
+.navbar li>a{
+    font-family: "Winky Sans", sans-serif;
+    text-decoration: none;
+    color: #c11c04;
+    font-size: 20px; 
+    border-radius: 50px;
+    display: inline-block;
+    
+    width: 70px;
+    padding: 20px 20px;
+    text-align: center;
+    background-color: #f0f0f0;
+    
+}
+
+
+
+
+
+
+@media (max-width: 840px) {
+    header {
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 45px; 
+    }
+    
+    
+    .navbar ul {
+        display:flex;
+        
+        gap: 4.3rem;
+    }
+
+    .navbar ul li a {
+        flex:1;
+        display: inline-block;
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+@media(max-width: 535px) {
+    
+    
+    header {
+        display:flex;
+        align-items: stretch;
+        flex-direction: column; 
+        
+        width:100%;
+    }
+    .logodiv{
+        display:flex;
+        gap:0.7rem;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .logoimg {
+        
+        border-radius: 20%;
+        width: 3rem;
+        height: 3rem;
+    }
+
+    header h1 {
+        font-size: 2.5rem; 
+    }
+    .navbar ul{
+        display: flex;
+        flex-direction: column;
+        gap:0.5rem;
+        width: 100%
+    }
+    
+    
+
+    
+    
+    .navbar ul li a {
+        display:block;
+        width:100% ;
+        padding: 10px 0;
+        text-align: center;
+    }
+}
+
+
